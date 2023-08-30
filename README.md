@@ -16,10 +16,7 @@ To obtain and preprocess the raw data, follow these steps:
 4. Utilize `mediapipe_extract_85.py` to extract keypoints for hands and face from segmented videos using Mediapipe.
 5. Normalize keypoints.
 6. The extracted GST embeddings can be downloaded from [here](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/mounika_k_research_iiit_ac_in/EjF2JMtFsE1Pm7aEO8WOyNMBdhoYsmdEEkm-jMI_GR8hNg?e=A9If6B). For extracting Tacotron 2 GST embeddings, follow the instructions provided in the [repository](https://github.com/NVIDIA/mellotron/tree/master) and resample videos accordingly.
-7. The preprocessed FAUs can be downloaded from [here](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/mounika_k_research_iiit_ac_in/Eq_b-6AHA-tEg4zG5vQ146EBWJZWDwuyb4aGtAsvAS7Oow?e=hOgy5g). For FAUs extraction, refer to the [repository](https://github.com/CVI-SZU/ME-GraphAU#:~:text=action%20unit%20categories.-,Learning%20Multi%2Ddimensional%20Edge%20Feature%2Dbased%20AU%20Relation%20Graph,for%20Facial%20Action%20Unit%20Recognition&text=The%20main%20novelty%20of%20the,are%20illustrated%20in%20this%20figure). After extraction of FAUs, follow the below steps.
-a. Thresholding,
-b. Linear interpolation,
-c. Hanning smoothing
+7. The preprocessed FAUs can be downloaded from [here](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/mounika_k_research_iiit_ac_in/Eq_b-6AHA-tEg4zG5vQ146EBWJZWDwuyb4aGtAsvAS7Oow?e=hOgy5g). For FAUs extraction, refer to the [repository](https://github.com/CVI-SZU/ME-GraphAU#:~:text=action%20unit%20categories.-,Learning%20Multi%2Ddimensional%20Edge%20Feature%2Dbased%20AU%20Relation%20Graph,for%20Facial%20Action%20Unit%20Recognition&text=The%20main%20novelty%20of%20the,are%20illustrated%20in%20this%20figure). After extraction of FAUs, use [smooth_facs_embedding.py](https://github.com/Mounika2405/MultiFacet-Speech-to-Sign/blob/main/preprocess/smooth_facs_embedding.py) to pre-process the extracted FAUs used for training our models.
 8. The text embeddings were extracted using BERT. To download the extracted BERT embeddings for the ISL dataset, visit [here](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/mounika_k_research_iiit_ac_in/EsEt2p7BIoxApqnkFGFhpycB9LOZ2lzUWNOM5yFD8kaz5w?e=JWMEMf)
 
 ## Download Pretrained Models
